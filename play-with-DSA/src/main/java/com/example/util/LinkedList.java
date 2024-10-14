@@ -24,18 +24,23 @@ public class LinkedList<E> implements Iterable<E> {
         tail = newNode;
     }
 
+    public void add(int index,E e){
+        // TODO
+    }
+
     @Override
     public Iterator<E> iterator() {
-
         return new Iterator<E>() {
+            Node temp = head;
             @Override
             public boolean hasNext() {
-                return false;
+                return temp != null;
             }
-
             @Override
             public E next() {
-                return null;
+                E data = temp.data;
+                temp = temp.next;
+                return data;
             }
         };
     }
