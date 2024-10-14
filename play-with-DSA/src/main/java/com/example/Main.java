@@ -12,14 +12,8 @@ public class Main {
         list.add(1);
         list.add(2);
         list.add(3);
-
-        Iterator<Integer> it = list.iterator();
-        while (it.hasNext()) {
-            Integer ele = it.next();
-            System.out.println(ele);
-        }
-
-        // Java 1.5
+        list.add(0,4);
+        System.out.println(list.size());
         for (Integer ele : list) {
             System.out.println(ele);
         }

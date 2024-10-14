@@ -12,7 +12,9 @@ public class LinkedList<E> implements Iterable<E> {
 
     private Node head;
     private Node tail;
+    private int size;
 
+    // C
     public void add(E e){
         Node newNode = new Node(e);
         if(head == null) {
@@ -22,11 +24,41 @@ public class LinkedList<E> implements Iterable<E> {
             tail.next = newNode;
         }
         tail = newNode;
+        size++;
+    }
+    public void add(int index,E e){
+        if(index < 0){
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        if(index > size){
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        Node newNode = new Node(e);
+        if(index == 0){
+            newNode.next = head;
+            head = newNode;
+        }
+        else{
+            Node temp = head;
+            for(int i=0;i<index-1;i++){
+                temp = temp.next;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
+        }
+        size++;
     }
 
-    public void add(int index,E e){
-        // TODO
+    //R
+    public E get(int index){
+        //..
+        return null;
     }
+
+    public int size(){
+        return size;
+    }
+
 
     @Override
     public Iterator<E> iterator() {
