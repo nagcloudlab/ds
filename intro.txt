@@ -1,15 +1,13 @@
 
 
-program
+Program
 
-    - data  ( data structure )
-    - logic ( algorithm ) - CRUDSS
+    - data  ( data structure aka memory-layout )
+    - logic ( process data aka algorithms ) - CRUDSS
 
 -------------------------------------
 
 - primary data structure
 - secondary data structure
-
-    e.g array
 
 --------------------------------------    
