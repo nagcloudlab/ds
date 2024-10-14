@@ -27,12 +27,6 @@ public class LinkedList<E> implements Iterable<E> {
         size++;
     }
     public void add(int index,E e){
-        if(index < 0){
-            throw new IndexOutOfBoundsException("Index out of bounds");
-        }
-        if(index > size){
-            throw new IndexOutOfBoundsException("Index out of bounds");
-        }
         Node newNode = new Node(e);
         if(index == 0){
             newNode.next = head;
@@ -51,8 +45,40 @@ public class LinkedList<E> implements Iterable<E> {
 
     //R
     public E get(int index){
-        //..
-        return null;
+        Node temp = head;
+        for(int i=0;i<index;i++){
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
+    // U
+    public  void set(int index,E e){
+        Node temp = head;
+        for(int i=0;i<index;i++){
+            temp = temp.next;
+        }
+        temp.data = e;
+    }
+
+    // D
+    public void remove(int index){
+        if(index == 0){
+            head = head.next;
+        }
+        else{
+            Node temp = head;
+            for(int i=0;i<index-1;i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
+        size--;
+    }
+
+    // S - linear search
+    public int indexOf(E e){
+       //..
     }
 
     public int size(){
