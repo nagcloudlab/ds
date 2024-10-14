@@ -1,0 +1,15 @@
+
+
+program
+
+    - data  ( data structure )
+    - logic ( algorithm ) - CRUDSS
+
+-------------------------------------
+
+- primary data structure
+- secondary data structure
+
+    e.g array
+
+--------------------------------------    
