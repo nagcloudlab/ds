@@ -76,10 +76,18 @@ public class LinkedList<E> implements Iterable<E> {
         size--;
     }
 
-    // S - linear search
-    public int indexOf(E e){
-       //..
+    // S - linear search ( O(n) )
+    public int indexOfV1(E e){
+        Node temp = head;
+        for(int i=0;i<size;i++){
+            if(temp.data.equals(e)){
+                return i;
+            }
+            temp = temp.next;
+        }
+        return -1;
     }
+    // S - sorting
 
     public int size(){
         return size;

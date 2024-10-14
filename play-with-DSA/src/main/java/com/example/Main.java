@@ -16,5 +16,16 @@ public class Main {
 
         System.out.println(names.get(0));
 
+        java.util.LinkedList linkedList = new java.util.LinkedList();
+
     }
 }
+
+
+/*
+
+3 pillar concepts in java
+    object based
+    collections framework
+    concurrency
+ */
