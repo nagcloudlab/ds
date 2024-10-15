@@ -3,7 +3,9 @@ package com.example;
 
 import com.example.util.LinkedList;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,14 +20,10 @@ public class Main {
 
         java.util.LinkedList linkedList = new java.util.LinkedList();
 
+
+        List<Integer> s=List.of(1,2,3);
+        System.out.println(s.getClass().getName());
+
     }
 }
 
-
-/*
-
-3 pillar concepts in java
-    object based
-    collections framework
-    concurrency
- */
