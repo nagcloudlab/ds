@@ -83,12 +83,18 @@ public class CourseGraph {
     // Utility method to convert course numbers to course names
     private static String getCourseName(int course) {
         switch (course) {
-            case 0: return "Math";
-            case 1: return "Physics";
-            case 2: return "Computer Science";
-            case 3: return "Quantum Mechanics";
-            case 4: return "Algorithms";
-            default: return "Unknown Course";
+            case 0:
+                return "Math";
+            case 1:
+                return "Physics";
+            case 2:
+                return "Computer Science";
+            case 3:
+                return "Quantum Mechanics";
+            case 4:
+                return "Algorithms";
+            default:
+                return "Unknown Course";
         }
     }
 }
