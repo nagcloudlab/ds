@@ -12,10 +12,10 @@ class Owner {
         this.name = name;
     }
 
-    @Override
-    public int hashCode() {
-        return 12345;
-    }
+//    @Override
+//    public int hashCode() {
+//        return name.hashCode();
+//    }
 
     @Override
     public boolean equals(Object obj) {
@@ -36,7 +36,7 @@ public class Ex {
 
 
         Owner owner1 = new Owner("Riya");
-        //System.out.println(owner1.hashCode());
+        System.out.println(owner1.hashCode());
         Owner owner2 = new Owner("Diya");
         //System.out.println(owner2.hashCode());
 

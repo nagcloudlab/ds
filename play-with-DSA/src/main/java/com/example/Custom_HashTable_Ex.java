@@ -18,7 +18,7 @@ public class Custom_HashTable_Ex {
 
     // Hash function
     private int hash(int key) {
-        return new Random().nextInt(100) % SIZE;
+        return key % SIZE; //12345 % 10 = 5
     }
 
     // Insert key-value pair
