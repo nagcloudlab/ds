@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 public class StringTable_Ex {
     public static void main(String[] args) {

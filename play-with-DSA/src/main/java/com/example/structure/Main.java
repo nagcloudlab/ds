@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 
 import com.example.util.LinkedList;

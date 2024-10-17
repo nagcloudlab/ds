@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 
 import java.util.ArrayList;

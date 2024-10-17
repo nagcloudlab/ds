@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 class TrieNode {
     TrieNode[] children = new TrieNode[26];  // Assuming lowercase English letters

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 
 public class WeatherDecisionTree {

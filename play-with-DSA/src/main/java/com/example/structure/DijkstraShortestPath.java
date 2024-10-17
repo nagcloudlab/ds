@@ -1,4 +1,4 @@
-package com.example;
+package com.example.structure;
 
 
 import java.util.*;
@@ -36,14 +36,11 @@ public class DijkstraShortestPath {
         int[] distances = new int[numNodes];
         Arrays.fill(distances, Integer.MAX_VALUE); // Initialize distances with infinity
         distances[startNode] = 0;
-
         PriorityQueue<Edge> pq = new PriorityQueue<>(Comparator.comparingInt(edge -> edge.weight));
         pq.add(new Edge(startNode, 0));
-
         while (!pq.isEmpty()) {
             Edge current = pq.poll();
             int currentNode = current.to;
-
             for (Edge edge : graph.getEdges(currentNode)) {
                 int newDist = distances[currentNode] + edge.weight;
                 if (newDist < distances[edge.to]) {
